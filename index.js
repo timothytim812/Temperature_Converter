@@ -14,14 +14,14 @@ button.onclick = function convert() {
 
   if (toFahrenheit.checked) {
     temp = inputValue * 9/5 + 32;
-    result.textContent = temp + "°F";
+    result.textContent = temp.toFixed(1) + "°F";
 
   } 
   
   else if (toCelsius.checked) {
     temp = (inputValue - 32) * (5/9);
-    result.textContent = temp + "°C";
-  } 
+    result.textContent = temp.toFixed(1) + "°C";
+  }
 
   else {
     result.textContent = "Please select a temperature unit.";
